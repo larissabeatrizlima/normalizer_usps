@@ -6,7 +6,7 @@ setup(
     description='A library for normalizing US addresses.',
     long_description=open('README.md').read(),
     long_description_content_type='text/markdown',  # This ensures that PyPI renders your README correctly
-    url='https://github.com/yourusername/normalizer_usps',  # Replace with your repository URL
+    url='https://github.com/larissabeatrizlima/normalizer_usps',  # Replace with your repository URL
     author='Larissa Lima',
     author_email='larissabeatrizlima@outlook    .com',
     license='MIT',  # Choose an appropriate license
