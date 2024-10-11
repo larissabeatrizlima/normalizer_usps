@@ -1,15 +1,15 @@
 from setuptools import setup, find_packages
 
 setup(
-    name='normalizer_usps',  # Unique package name
-    version='0.1.0',         # Update version number appropriately
+    name='normalizer_usps',
+    version='0.1.0',         
     description='A library for normalizing US addresses.',
     long_description=open('README.md').read(),
-    long_description_content_type='text/markdown',  # This ensures that PyPI renders your README correctly
-    url='https://github.com/larissabeatrizlima/normalizer_usps',  # Replace with your repository URL
+    long_description_content_type='text/markdown', 
+    url='https://github.com/larissabeatrizlima/normalizer_usps', 
     author='Larissa Lima',
     author_email='larissabeatrizlima@outlook    .com',
-    license='MIT',  # Choose an appropriate license
+    license='MIT',
     packages=find_packages(),
     include_package_data=True,
     package_data={'normalizer_usps': ['data/*.json']},
@@ -20,7 +20,6 @@ setup(
     classifiers=[
         'Programming Language :: Python :: 3',
         'Operating System :: OS Independent',
-        # Add other classifiers from https://pypi.org/classifiers/
     ],
     python_requires='>=3.6',
 )

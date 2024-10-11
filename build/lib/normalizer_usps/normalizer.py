@@ -9,14 +9,12 @@ except ImportError:
     import importlib_resources as pkg_resources
 
 def load_abbreviation_dict(filename):
-    # Adjust the package path based on your package structure
     package_name = 'normalizer_usps.data'
     with pkg_resources.open_text(package_name, filename) as f:
         abbreviation_dict_raw = json.load(f)
     # Convert keys to uppercase
     abbreviation_dict = {k.upper(): v for k, v in abbreviation_dict_raw.items()}
     return abbreviation_dict
-
 
 # Load dictionaries
 street_type_abbreviations = load_abbreviation_dict('street_type_abbreviations.json')
