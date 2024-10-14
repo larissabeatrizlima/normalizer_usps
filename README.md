@@ -38,17 +38,12 @@ normalized_addresses = abbreviate_address_series(addresses, secondary_address_ab
 print(normalized_addresses)
 
 ```bash
-0     123 Happy ST
-1       456 Elm AVE
-2    789 Oak BLVD
-3    101 Maple Apartment
+0     123 HAPPY ST
+1       456 ELM AVE
+2    789 OAK BLVD
+3    101 MAPLE APT
 dtype: object
 
-0     123 Happy Street
-1       456 Elm Avenue
-2    789 Oak Boulevard
-3        101 Maple APT
-dtype: object
 ```
 
 ## Data Files
