@@ -19,7 +19,7 @@ def load_abbreviation_dict(filename):
 # Load dictionaries
 street_type_abbreviations = load_abbreviation_dict('street_type_abbreviations.json')
 
-def abbreviate_address_series(address_series, abbreviation_dict):
+def normalize_abbreviations(address_series, abbreviation_dict):
     # Compile regex pattern from uppercase dictionary keys
     keys = map(re.escape, abbreviation_dict.keys())
     pattern = r'\b(' + '|'.join(keys) + r')\b'
